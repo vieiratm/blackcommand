@@ -34,7 +34,15 @@
             <button id="admin-tools" class="hidden" onclick="showAdminPanel()">Add Product</button>
             <button onclick="logout()">Logout</button>
         </nav>
-
+    <div id="admin-panel" class="hidden" style="background: #ddd; padding: 20px; border-bottom: 2px solid #bbb;">
+        <h3>Admin: Add New Product</h3>
+        <input type="text" id="new-p-name" placeholder="Item Name">
+        <input type="number" id="new-p-price" placeholder="Price">
+        <input type="number" id="new-p-qty" placeholder="Quantity">
+        <input type="text" id="new-p-img" placeholder="Image URL (e.g. https://...)">
+        <button onclick="addNewProduct()">Save Product</button>
+        <button onclick="showAdminPanel()">Close</button>
+    </div>
         <div class="container">
             <div id="product-grid" class="grid">
                 </div>
