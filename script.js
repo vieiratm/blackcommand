@@ -1,5 +1,5 @@
 // Configuration
-const DISCORD_WEBHOOK_URL = 'YOUR_WEBHOOK_HERE'; 
+const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1480276662615802033/QpfNdcbcmapSjgbIiayUOtuhqZOfqijMoiGBtkUIP7k-v--YO5kEDByEbRZiXRxzL8M7'; 
 
 let currentUser = null;
 let cart = [];
