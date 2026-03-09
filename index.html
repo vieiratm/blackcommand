@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-screen" class="overlay">
+        <div class="auth-box">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Enter</button>
+            <p onclick="toggleModal('register-modal')">No account? Register</p>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="auth-box">
+            <h2>Register</h2>
+            <input type="text" id="reg-user" placeholder="New Username">
+            <input type="password" id="reg-pass" placeholder="New Password">
+            <button onclick="register()">Create Account</button>
+            <button onclick="toggleModal('register-modal')">Close</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <nav>
+            <span id="user-display">Welcome</span>
+            <button id="admin-tools" class="hidden" onclick="showAdminPanel()">Add Product</button>
+            <button onclick="logout()">Logout</button>
+        </nav>
+
+        <div class="container">
+            <div id="product-grid" class="grid">
+                </div>
+
+            <aside class="cart-panel">
+                <h3>Your Cart</h3>
+                <div id="cart-items"></div>
+                <hr>
+                <button class="buy-btn" onclick="sendToDiscord()">Fazer pedido</button>
+            </aside>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
